@@ -14,6 +14,9 @@ public class GameWindow extends JFrame {
 
         setVisible(true);
 
+        setTitle("Tic Tac Toe");
+        setResizable(false);
+
     }
 
 }
