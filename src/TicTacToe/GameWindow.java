@@ -17,6 +17,8 @@ public class GameWindow extends JFrame {
         setTitle("Tic Tac Toe");
         setResizable(false);
 
+        setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
+
     }
 
 }
