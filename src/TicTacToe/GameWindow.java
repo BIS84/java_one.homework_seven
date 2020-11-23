@@ -2,6 +2,8 @@ package TicTacToe;
 
 import javax.swing.*;
 import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
 public class GameWindow extends JFrame {
     private static final int WIN_WIDTH = 507;
@@ -27,6 +29,13 @@ public class GameWindow extends JFrame {
         panelButtons.add(btnStart);
         panelButtons.add(btnExit);
         add(panelButtons, BorderLayout.SOUTH);
+
+        btnExit.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                System.exit(0);
+            }
+        });
 
     }
 
