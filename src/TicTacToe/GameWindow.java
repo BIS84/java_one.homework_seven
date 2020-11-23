@@ -1,6 +1,7 @@
 package TicTacToe;
 
 import javax.swing.*;
+import java.awt.*;
 
 public class GameWindow extends JFrame {
     private static final int WIN_WIDTH = 507;
@@ -18,6 +19,14 @@ public class GameWindow extends JFrame {
         setResizable(false);
 
         setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
+
+        JButton btnStart = new JButton("Start");
+        JButton btnExit = new JButton("Exit");
+        JPanel panelButtons = new JPanel(new GridLayout(1, 2));
+
+        panelButtons.add(btnStart);
+        panelButtons.add(btnExit);
+        add(panelButtons, BorderLayout.SOUTH);
 
     }
 
